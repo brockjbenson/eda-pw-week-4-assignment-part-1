@@ -71,7 +71,7 @@ console.log('Test Q6 - Function Array:', getLast( arr ));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-let array1 = [1, 2, 3, 4, 5];
+arr;
 function find( array, value) {
   for (let x = 0; x < array.length; x++) {
     if (array[x] === value) {
@@ -81,24 +81,35 @@ function find( array, value) {
     }
 }
 }
-console.log('Number is in "array1": ', find(array1, 8));
+console.log('Number is in "array1": ', find(arr, 8));
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
+  if (letter === string[0]) {
+    return true;
+  } else {
+    return false
+  }
+
 
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+arr;
+size1 = arr.length;
+function sumAll( array, size ) {
   let sum = 0
+  for (let i=0; i < size; i++)
+  sum =+ array[i];
   // TODO: loop to add items
   return sum;
 }
+console.log('Sum of all array values: ', sumAll(arr, size1));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
