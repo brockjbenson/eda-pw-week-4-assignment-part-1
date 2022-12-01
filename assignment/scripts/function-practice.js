@@ -75,7 +75,7 @@ console.log('Test Q6 - Function Array:', getLast());
 let array1 = [1, 2, 3, 4, 5];
 function find() {
   for (let x = 0; x < array1.length; x++) {
-    if (array1[x] === 3) {
+    if (array1[x] === 8) {
         return true;
     }  else {
       return false;
