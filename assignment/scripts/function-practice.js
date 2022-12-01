@@ -15,10 +15,10 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return 'Hello Brock!';
+  return name;
 } // end helloName
 // Remember to call the function to test
-console.log( 'Test - should say "Hello Brock!"', helloName());
+console.log( 'Test - should say "Hello Brock!"', helloName('Hello, Brock!'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {
@@ -56,32 +56,32 @@ console.log( 'isPositive - should say false', isPositive(-14) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-
-function getLast() {
-  let arr = [1,2,3,4];
-  let last = arr[arr.length - 1];
-  if(arr.length === 0){
+let arr = [1,2,3,4];
+let last = arr[arr.length - 1];
+function getLast( array ) {
+  if(array.length === 0){
     return undefined;
   } else{
      return last;
   }
 }
 
-console.log('Test Q6 - Function Array:', getLast());
+console.log('Test Q6 - Function Array:', getLast( arr ));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 let array1 = [1, 2, 3, 4, 5];
-function find() {
-  for (let x = 0; x < array1.length; x++) {
-    if (array1[x] === 8) {
+function find( array, value) {
+  for (let x = 0; x < array.length; x++) {
+    if (array[x] === value) {
         return true;
     }  else {
       return false;
     }
 }
 }
+console.log('Number is in "array1": ', find(array1, 8));
 // ----------------------
 // Stretch Goals
 // ----------------------
