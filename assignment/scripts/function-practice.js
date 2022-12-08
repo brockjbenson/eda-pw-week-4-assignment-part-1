@@ -41,8 +41,9 @@ console.log( 'Multiplying 2, 3, & 4: ', multiplyThree(2, 3, 4));
 function isPositive( number ) {
   if ( number > 0 ){
     return true;
-  }
+  } else {
     return false;
+  }
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -57,8 +58,8 @@ console.log( 'isPositive - should say false', isPositive(-14) );
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 let arr = [1,2,3,4];
-let last = arr[arr.length - 1];
 function getLast( array ) {
+  let last = array[array.length - 1];
   if(array.length === 0){
     return undefined;
   } else{
